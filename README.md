@@ -33,3 +33,12 @@ Run as command in Powershell:
      }
 }
 ```
+
+**Explanation:**
+1. **Get-ChildItem -Directory -Recurse**: This retrieves all subdirectories recursively.
+2. **Loop through each directory**: The script iterates over each directory.
+3. **Collect Markdown files**: It collects all .md files in the current directory.
+4. **Check for Markdown files**: If any Markdown files are found, it defines the output PDF file name based on the directory name.
+5. **Merge and Convert**: It uses Pandoc to merge the Markdown files into a single PDF file in the same directory.
+6. **Output messages**: Displays messages indicating which files are being processed and when the PDF is created.
+
